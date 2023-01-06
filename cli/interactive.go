@@ -22,7 +22,7 @@ func terminalMenu(config Config) {
 
 	switch input {
 	case "s":
-		fmt.Print("@search ")
+		fmt.Print("@find ")
 		query, _ := reader.ReadString('\n')
 		fmt.Println("\nSent search request.")
 

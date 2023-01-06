@@ -50,7 +50,7 @@ func (irc *IrcServer) handler(conn net.Conn) {
 
 		irc.log.Printf("Request Received: %s\n", request)
 
-		if strings.Contains(request, "@search") {
+		if strings.Contains(request, "@find") {
 			go irc.searchHandler(request, conn)
 		}
 
